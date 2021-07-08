@@ -1,0 +1,20 @@
+@import '@carbon/themes/scss/themes';
+@import '@carbon/type/scss/type';
+@import '@carbon/type/scss/font-face/mono';
+@import '@carbon/type/scss/font-face/sans';
+@include carbon--type-reset();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+
+$carbon--theme: $carbon--theme--g100;
+@include carbon--theme();
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
+.App {
+  background-color: $ui-background;
+  height: 100vh;
+}
+
+main{
+  margin-top: 3rem;
+}
